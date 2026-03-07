@@ -39,15 +39,6 @@ const uWonText =        `You escaped the room.
                         Congratulations!`
 
 
-// const fixedBottomSection = document.getElementById("fixedBottomSection");
-// const gameText = document.getElementById("gameText");
-// const userInput = document.getElementById("userInput");
-// const sendCommandButton = document.getElementById("sendCommandButton");
-// const commandlist = document.getElementById("commandList")
-
-// let haveDrawerKey = false;
-// let haveDoorKey = false;
-
 
 
 
@@ -174,21 +165,32 @@ function tryOpenSafe(cmd)
 
 
 
+
+let haveDrawerKey = false;
+let haveDoorKey = false;
+
+
+
 // ============================
 // DOM ELEMENTS
 // ============================
 
+const userInput = document.getElementById("userInput");
+
 // SECTIONS
-const mainMenuSection = document.getElementById("main-menu-section")
-const loadingScreenSection = document.getElementById("loading-screen-section")
-const gameplaySection = document.getElementById("gameplay-section")
+const mainMenuSection = document.getElementById("main-menu-section");
+const loadingScreenSection = document.getElementById("loading-screen-section");
+const gameplaySection = document.getElementById("gameplay-section");
+const inputSection = document.getElementById("input-section");
 
 // SCREEN TEXT
-const loadingScreenText = document.getElementById("loading-screen-text")
+const loadingScreenText = document.getElementById("loading-screen-text");
+const gameplayText = document.getElementById("gameplay-text");
 
 // BUTTONS
 const startGamebtn = document.getElementById("start-game-button");
-const backToMainMenuBtn = document.getElementById("back-to-main-menu-button")
+const backToMainMenuBtn = document.getElementById("back-to-main-menu-button");
+const sendCommandButton = document.getElementById("send-command-button");
 
 // ============================
 // STATE
@@ -200,6 +202,8 @@ let cancelTyping = false;
 // ============================
 // EVENTS
 // ============================
+
+
 
 startGamebtn.addEventListener("click", onStartGamePressed);
 backToMainMenuBtn.addEventListener("click", onBackToMainMenuPressed);
@@ -276,6 +280,7 @@ function write(txt, target, i, callback)
 function resetUI() 
 {
     loadingScreenText.innerHTML = "";
+    gameplayText.innerHTML = "";
     typeWriterActive = false;
 }
 
@@ -318,4 +323,14 @@ function hideGameplay()
     gameplaySection.classList.add("hide")
 }
 
+function showInput() 
+{
+    userInput.classList.remove("hide");
+    sendCommandButton.classList.remove("hide");
+}
 
+function hideInput() 
+{
+    userInput.classList.add("hide");
+    sendCommandButton.classList.add("hide");
+}

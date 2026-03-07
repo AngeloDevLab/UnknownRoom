@@ -37,12 +37,12 @@ function setAppState(newAppState)
         showMainMenu();
     }
 
-    if (currentGameState === appState.Loading)
+    if (currentAppState === appState.Loading)
     {
         loadGame();
     }
 
-    if (currentGameState === appState.Playing)
+    if (currentAppState === appState.Playing)
     {
         startIntro();
     }
@@ -71,7 +71,7 @@ function continueGame()
 
     hideLoadingScreen();
     showGameplay();
-    setState(appState.Playing)
+    setAppState(appState.Playing)
 }
 
 function initGame()
@@ -99,5 +99,5 @@ function runLoadingSteps(step)
 
 function startIntro() 
 {
-    typeWriter(introText, showInput);
+    typeWriter(introText, gameplayText);
 }
