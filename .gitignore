@@ -1,0 +1,9 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+
+# Future-proof (falls du später npm nutzt)
+node_modules/

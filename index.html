@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown Room</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <!-- MAIN - MENU -->
+    <section id="main-menu-section" class="main-menu-section  hide">
+
+        <h1>Welcome to Unknown Room</h1>
+            
+        <h2>Choose your Room</h2>
+
+        <section id="your-adventure-section" class="your-adventure-section">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+            
+            <div id="your-adventure">
+                <h3>Demo Szenario</h3>
+
+                <img src="/assets/images/icons/file-question-mark.svg" alt="simples bild welches die szene beschreibt">
+
+                <p>Ein Test raum um simple Core spielmechaniken zu testen</p>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+
+        </section>
+
+        <button id="start-game-button">Start Game</button>
+
+    </section>
+
+    <!-- LOADING - SCREEN -->
+    <section id="loading-screen-section" class="loading-screen-section hide">
+        <p id="loading-screen-text"></p>
+    </section>
+
+    <!-- GAMEPLAY -->
+    <section id="gameplay-section" class="gameplay-section">
+
+        <!-- HEADLINE -->
+        <h2>Demo Scenario</h2>
+
+        <!-- TEXT -->
+        <div class="gameplay-text-container">
+            <h3>Previously...</h3>
+            <p id="gameplay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi sapiente voluptas esse mollitia quia distinctio eius optio earum atque recusandae, voluptatum aut ullam vero magnam dicta consequuntur saepe rem?</p>
+        </div>
+     
+        <div class="tablet-container">
+            <!-- MAP -->
+            <div class="map-container box-shadow-right">
+                <h3>Map</h3>
+
+                <svg id="map" width="200" height="200">
+
+                    <line x1="50" y1="40" x2="120" y2="175" stroke="white" stroke-width="4"/>
+
+                    <rect x="120" y="150" width="80" height="50" stroke="white"></rect>
+
+                    <rect x="0" y="0" width="50" height="80" stroke="white"></rect>
+
+
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+
+            <div class="inventory-and-health-box">
+                <!-- INVENTORY -->
+                <div class="inventory-container box-shadow-left">
+                    <h3>Inventory</h3>
+
+                    <ul>
+                        <li>Drawer Key</li>
+                        <li>extemly long to read note</li>
+                        <li>Flashlight</li>
+                        <li>Lighter</li>
+                        <li>Drawer Key</li>
+                        <li>note</li>
+                        <li>Flashlight</li>
+                        <li>Lighter</li>
+                    </ul>
+                </div>
+
+                <!-- HEALTH - BAR -->
+                <div class="player-health box-shadow-right">
+                    <h3>Health</h3>
+                    <div class="health-bar"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+        <button id="back-to-main-menu-button">Back to Main</button>
+
+        <!-- FIXED INPUT -->
+        <div class="input-section">
+            <input type="text" id="user-input" placeholder="Enter your command..." value="">
+            <button id="send-command-button">Send</button>
+        </div>
+
+
+
+        
+
+
+
+        
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <a href="#">CONTACT</a>
+
+        <p class="versionText">version 0.0.2 groundwork</p>
+
+    </footer>
+   
+    <script src="js/parser.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+    
+</body>
+</html>
