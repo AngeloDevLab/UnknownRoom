@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: 'Barrio';
-    src: url('/assets/fonts/Barrio/Barrio-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Barrio/Barrio-Regular.woff') format('woff');
+    src: url('../assets/fonts/Barrio/Barrio-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Barrio/Barrio-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'Special Elite';
-    src: url('/assets/fonts/Special_Elite/SpecialElite-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Special_Elite/SpecialElite-Regular.woff') format('woff');
+    src: url('../assets/fonts/Special_Elite/SpecialElite-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Special_Elite/SpecialElite-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
