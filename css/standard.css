@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #04052e;
+    --secondary-color: #02010a;
+    --asset-primary-color: #140152;
+    --asset-secondary-color: #22007c;
+    --highlight-color: #0d00a4;
+    --mobile-spacing: 1rem;
+    --tablet-spacing: 2rem;
+    --desktop-spacing: 4rem;
+}
+
+html {
+    font-size: 16px;
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: 'Special Elite';
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+
+    font-family: 'Barrio';
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+
+    font-family: 'Barrio';
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+
+    font-family: 'Barrio';
+    text-align: center;
+}
+
+footer {
+    height: 4rem;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    background-color: #fff;
+    height: 8rem;
+}
+
+input {
+    padding: 10px 20px;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Special Elite';
+
+    border: none;
+    border-radius: 8px;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+svg {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    stroke: #fff;
+}

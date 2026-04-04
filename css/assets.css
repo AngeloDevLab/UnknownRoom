@@ -1,0 +1,54 @@
+.button {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    font-family: 'Special Elite';
+    font-size: 1rem;
+    color: #fff;
+
+    -webkit-tap-highlight-color: transparent;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-button {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.svg-button:hover {
+    background-color: var(--asset-secondary-color);
+    border-radius: 50%;
+    transform: scale(1.3);
+}
+
+.svg-button-with-text {
+    height: 1.5rem;
+    gap: 0.5rem;
+}
+
+.svg-button-with-text:hover {
+    background-color: var(--asset-secondary-color);
+    border-radius: 0.5rem;
+    transform: scale(1.2);
+}
+
+.standard-button {
+    margin: 0 auto;
+    width: 200px;
+    padding: 1rem 2rem;
+    background-color: var(--asset-primary-color);
+
+    border-radius: 4px;
+}
+
+.standard-button:hover {
+    box-shadow: 0px 0px 8px var(--highlight-color);
+    background-color: var(--asset-secondary-color);
+}
